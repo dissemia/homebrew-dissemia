@@ -1,7 +1,7 @@
 class Disseminate < Formula
   include Language::Python::Virtualenv
 
-  desc "Document processor for textbooks, book, articles to produce html, pdf and ebook documents"
+  desc "Publish textbooks, books and articles in html, pdf and ebook"
   homepage "https://github.com/dissemia/disseminate"
   url "https://github.com/dissemia/disseminate/archive/refs/tags/v2.3.3.tar.gz"
   sha256 "fe8ff5bcfc1fc54fe0cf220ffc4ab58fe1dfa3d8e185f7fa17c28592e93226a1"
