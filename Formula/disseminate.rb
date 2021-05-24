@@ -37,9 +37,16 @@ class Disseminate < Formula
     sha256 "f13383a0b9fcbe649a1892b9c8eb4f8eab1d6d84b84bb7a624317afa98159cab"
   end
 
+  # Needed by python-slugify
   resource "unidecode" do
     url "https://files.pythonhosted.org/packages/cd/31/245d8a384939aa0ee152c76fc62890f79f35fc41cd12839f5df268d9081d/Unidecode-1.2.0.tar.gz"
     sha256 "8d73a97d387a956922344f6b74243c2c6771594659778744b2dbdaad8f6b727d"
+  end
+
+  # Needed by python-slugify
+  resource "text-unidecode"
+    url "https://files.pythonhosted.org/packages/ab/e2/e9a00f0ccb71718418230718b3d900e71a5d16e701a3dae079a21e9cd8f8/text-unidecode-1.3.tar.gz"
+    sha256 "bad6603bb14d279193107714b288be206cac565dfa49aa5b105294dd5c4aab93"
   end
 
   resource "markupsafe" do
@@ -52,16 +59,19 @@ class Disseminate < Formula
     sha256 "76fd16b3955e11b2a9fc3ad839342d6528f10324908a4a8f04f94ecda68205b3"
   end
 
+  # Needed by pdfcropmargins
   resource "Pillow" do
     url "https://files.pythonhosted.org/packages/60/f0/dd2eb7911f948bf529f58f0c7931f6f6466f711bd6f1d81a69dc4edd4e2a/Pillow-8.1.2.tar.gz"
     sha256 "b07c660e014852d98a00a91adfbe25033898a9d90a8f39beb2437d22a203fc44"
   end
 
+  # Needed by pdfcropmargins
   resource "PyPDF2" do
     url "https://files.pythonhosted.org/packages/b4/01/68fcc0d43daf4c6bdbc6b33cc3f77bda531c86b174cac56ef0ffdb96faab/PyPDF2-1.26.0.tar.gz"
     sha256 "e28f902f2f0a1603ea95ebe21dff311ef09be3d0f0ef29a3e44a932729564385"
   end
 
+  # Needed by pdfcropmargins
   resource "wheel" do
     url "https://files.pythonhosted.org/packages/ed/46/e298a50dde405e1c202e316fa6a3015ff9288423661d7ea5e8f22f589071/wheel-0.36.2.tar.gz"
     sha256 "e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e"
