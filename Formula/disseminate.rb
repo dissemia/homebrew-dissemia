@@ -1,11 +1,11 @@
 class Disseminate < Formula
   include Language::Python::Virtualenv
 
-  desc "Document processor for textbooks, book, articles, reports and essays to produce html, pdf and ebook documents"
+  desc "Document processor for textbooks, book, articles to produce html, pdf and ebook documents"
   homepage "https://github.com/dissemia/disseminate"
   url "https://github.com/dissemia/disseminate/archive/refs/tags/v2.3.3.tar.gz"
   sha256 "fe8ff5bcfc1fc54fe0cf220ffc4ab58fe1dfa3d8e185f7fa17c28592e93226a1"
-  license "GPL v3"
+  license "GPL-3.0-or-later"
 
   depends_on "freetype"
   depends_on "gnupg"
@@ -121,7 +121,7 @@ class Disseminate < Formula
 
   test do
     system "echo \"This is @b{my} test\" > test.dm"
-    system "dm build -i test.dm"
+    system "dm", "build", "-i", "test.dm"
     system "grep -c '<div class=\"body\"><p>This is <strong>my</strong> test' html/test.html"
   end
 end
