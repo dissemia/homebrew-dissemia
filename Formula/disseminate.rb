@@ -133,7 +133,7 @@ class Disseminate < Formula
     res = resources.map(&:name).to_set - ["Pillow"]
 
     res.each do |r|
-      venv.pip_install resource(r)
+      venv.pip_install_and_link resource(r)
     end
 
     venv.pip_install_and_link buildpath
