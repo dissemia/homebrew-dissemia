@@ -3,8 +3,8 @@ class Disseminate < Formula
 
   desc "Publish textbooks, books and articles in html, pdf and ebook"
   homepage "https://github.com/dissemia/disseminate"
-  url "https://github.com/dissemia/disseminate/archive/refs/tags/v2.3.3.tar.gz"
-  sha256 "fe8ff5bcfc1fc54fe0cf220ffc4ab58fe1dfa3d8e185f7fa17c28592e93226a1"
+  url "https://github.com/dissemia/disseminate/archive/refs/tags/v2.3.4.tar.gz"
+  sha256 "f0707a1b11a7142faa67d19eb802e14429fc8b1b51e8e37962ac35f9a884fc1e"
   license "GPL-3.0-or-later"
 
   depends_on "freetype"
@@ -142,6 +142,7 @@ class Disseminate < Formula
   test do
     system "echo \"This is @b{my} test\" > test.dm"
     system "dm", "build", "-i", "test.dm"
-    system "grep -c '<div class=\"body\"><p>This is <strong>my</strong> test' html/test.html"
+    assert_equal "1", pipe_output("grep -c '<div class=\"body\"><p>This is <strong>my</strong> test' html/test.html")
+
   end
 end
