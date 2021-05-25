@@ -143,6 +143,5 @@ class Disseminate < Formula
     system "echo \"This is @b{my} test\" > test.dm"
     system "dm", "build", "-i", "test.dm"
     assert_equal "1", pipe_output("grep -c '<div class=\"body\"><p>This is <strong>my</strong> test' html/test.html")
-
   end
 end
