@@ -8,7 +8,6 @@ class Disseminate < Formula
   license "GPL-3.0-or-later"
 
   depends_on "asymptote"
-  depends_on "basictex" => :recommended
   depends_on "freetype"
   depends_on "gnupg"
   depends_on "imagemagick"
