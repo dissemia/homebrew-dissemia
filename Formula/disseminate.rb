@@ -11,10 +11,9 @@ class Disseminate < Formula
   depends_on "gnupg"
   depends_on "jpeg"
   depends_on "librsvg"
-  depends_on "libyaml"
   depends_on "asymptote"
   depends_on "imagemagick"
-
+  depends_on "libyaml"
   depends_on "pdf2svg"
   depends_on "python@3.9"
 
