@@ -10,7 +10,6 @@ class Disseminate < Formula
   # External command dependencies
   depends_on "asymptote"
   depends_on "imagemagick"
-  depends_on "pdf2svg"
   depends_on "librsvg"
 
   # Pillow dependencies
@@ -18,6 +17,8 @@ class Disseminate < Formula
   depends_on "gnupg"
   depends_on "jpeg"
   depends_on "libyaml"
+  
+  depends_on "pdf2svg"
 
   # Python interpreter
   depends_on "python@3.9"
