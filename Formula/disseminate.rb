@@ -7,19 +7,14 @@ class Disseminate < Formula
   sha256 "f0707a1b11a7142faa67d19eb802e14429fc8b1b51e8e37962ac35f9a884fc1e"
   license "GPL-3.0-or-later"
 
-  # Pillow dependencies
   depends_on "freetype"
   depends_on "gnupg"
   depends_on "jpeg"
   depends_on "libyaml"
-
-  # External command dependencies
   depends_on "asymptote"
   depends_on "imagemagick"
   depends_on "pdf2svg"
   depends_on "librsvg"
-
-  # Python interpreter
   depends_on "python@3.9"
 
   uses_from_macos "libxml2"
