@@ -5,7 +5,7 @@ class Disseminate < Formula
   homepage "https://github.com/dissemia/disseminate"
   url "https://github.com/dissemia/disseminate/archive/refs/tags/v2.3.4.tar.gz"
   sha256 "f0707a1b11a7142faa67d19eb802e14429fc8b1b51e8e37962ac35f9a884fc1e"
-  license "GPL-3.0-or-later"
+  license "AGPL-3.0-only"
 
   depends_on "asymptote"
   depends_on "freetype"
